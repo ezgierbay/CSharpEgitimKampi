@@ -89,13 +89,14 @@ namespace _06_Arrays
             //;
             //            Console.WriteLine(person.Length);
 
-            //            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8 };
-            //           Array.Sort(numbers);
-            //            for (int i = 0; i < numbers.Length; i++)
-            //            {
-            //                Console.WriteLine(numbers[i]);
-            //            }
-            // reverse tersten sıralar
+            //int[] numbers = { 1, 2, 10, 4, 5, 6, 7, 8 };
+            //Array.Sort(numbers);
+            //Array.Reverse(numbers);
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
+
 
 
 
@@ -106,8 +107,61 @@ namespace _06_Arrays
             //int index = Array.IndexOf(customers, "buse");
             //Console.WriteLine(index);
 
+            //int[] numbers = { 1, 2, 3, 4, 5, 5522, 36 };
+            //Console.WriteLine("dizinin en büyük elemanı" + numbers.Max() + "dizinin" +
+            //    "en küçük elemanı " + numbers.Min());
+
             #endregion
+
+            #region kullanıcıdan değer alma
+            //string[] cities = new string[5];
+            //for (int i = 0; i < cities.Length; i++)
+            //{
+            //    Console.Write($"Lütfen {i + 1}.Şehri Giriniz:");
+            //    cities[i] = Console.ReadLine(); 
+
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine("--------");
+            //for (int i = 0; i < cities.Length; i++)
+            //{
+            //    Console.WriteLine(cities[i]);
+            //}
+
+            #endregion
+
+            //int[] numbers = { 10, 20, 30, 40, 50 };
+            //int sum = 0;
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    sum += numbers[i];
+            //}
+            //Console.WriteLine(sum);
+
+            
+
+            int[] numbers = {1,2,3,4,5,6,7,8};
+            Console.WriteLine("çift sayılar");
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    Console.WriteLine(numbers[i]);
+
+                }
+            }
+            Console.WriteLine("tek sayılar");
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 1)
+                {
+                    Console.WriteLine(numbers[i]);
+
+                }
+            }
+
             Console.Read();
         }
+
     }
 }
